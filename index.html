@@ -1,0 +1,109 @@
+
+<!--
+
+Sébastien Besnier
+
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--
+
+    Voici un commentaire HTML
+    utilisant plusieurs lignes
+
+    -->
+
+    <!-- La balise title permet de définir l'affichage dans l'onglet du navigateur  -->
+    <title>Voici ma première page Html</title>
+
+    <!-- Cette balise permet d'indiquer au navigateur quel encodage de caractère utiliser pour l'affichage
+    Il permet de mieux afficher certains caractère comme les accents par exemple -->
+    <meta charset="UTF-8">
+
+    <!--
+    Je peux définir ici des styles applicables seulement dans ce fichier html
+    en utilisant la balise style
+
+    -->
+
+    <style>
+        /* commentaire en CSS
+
+         */
+        h1 {
+            font-family: Verdana;
+            font-size: 34px;
+            color: cadetblue;
+            padding-bottom: 10px;
+            padding-top: 30px;
+            background-color: chocolate;
+
+        }
+
+
+        .h1_red {
+            background-color: darkred;
+            font-size:18px;
+        }
+
+
+
+    </style>
+
+
+    <!--
+    Je peux faire appel à un fichier css définissant des styles.
+    Cela me permet de l'appeler depuis plusieurs fichiers html de mon site.
+    -->
+    <link rel="stylesheet" type="text/css" href="css/mes_styles_a_moi.css"/>
+
+
+</head>
+<body>
+
+    <h1>Mon premier titre</h1>
+    <p> Mon titre aura donc les attributs de style suivant : <br>
+        font-family: Verdana;<br>
+        font-size: 34px;<br>
+        color: cadetblue;<br>
+        padding-bottom: 10px;<br>
+        padding-top: 30px;<br>
+        background-color: chocolate;
+    </p>
+
+
+    <h1 class="h1_red"> Mon deuxième titre</h1>
+    <p> Mon titre aura donc les attributs de style suivant : <br>
+        font-family: Verdana;<br>
+        <span style="text-decoration: line-through;color: red">font-size: 34px;</span> La taille définie dans la class surcharge celle définie pour la balise h1 <br>
+        font-size:18px; Issue de la classe<br>
+        color: cadetblue;<br>
+        padding-bottom: 10px;<br>
+        padding-top: 30px;<br>
+        <span style="text-decoration: line-through;color: red">background-color: chocolate;</span>
+        background-color: darkred; La couleur définie dans la class surcharge celle définie pour la balise h1
+
+
+
+    </p>
+
+    <h1 class="h1_red" style="background-color: blueviolet;" > Mon troisième titre</h1>
+    <p>
+        font-family: Verdana;<br>
+        <span style="text-decoration: line-through;color: red">font-size: 34px;</span> La taille définie dans la class surcharge celle définie pour la balise h1 <br>
+        font-size:18px; Issue de la classe<br>
+        color: cadetblue;<br>
+        padding-bottom: 10px;<br>
+        padding-top: 30px;<br>
+        <span style="text-decoration: line-through;color: red">background-color: chocolate;
+        background-color: darkred; </span>
+        background-color: blueviolet; La couleur définie del'attribut style de la balise surcharge celle définie dans la classe qui surcharge celle définie pour la balise h1
+    </p>
+
+
+    <h2>Mon titre 2</h2>
+
+</body>
+</html>
